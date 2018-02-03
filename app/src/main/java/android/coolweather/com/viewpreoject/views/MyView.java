@@ -26,7 +26,6 @@ public class MyView extends View implements View.OnClickListener{
     //在代码中使用new关键字创建View会使用
     public MyView(Context context) {
         super(context);
-        Log.d("MVE","MyView(Context context）被调用");
     }
     /*
     * 在布局文件中声明View会调用,如果想要在XML布局文件中使用该View就必须实现这个构造方法
@@ -35,7 +34,6 @@ public class MyView extends View implements View.OnClickListener{
     */
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        Log.d("MVE","MyView(Context context, AttributeSet attrs)被调用");
         mRect=new Rect();
         mPaint=new Paint();
         //获取TypedArray对象，其包含了我们自定义的View属性
@@ -66,7 +64,6 @@ public class MyView extends View implements View.OnClickListener{
      */
     public MyView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        Log.d("MVE","MyView(Context context, AttributeSet attrs, int defStyleAttr)被调用");
     }
 
     /*
